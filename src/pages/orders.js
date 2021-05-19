@@ -58,6 +58,7 @@ export async function getServerSideProps(context) {
     .collection("users")
     .doc(session.user.email)
     .collection("orders")
+    .orderBy("timestamp", "desc")
     .get();
 
   const orders = await Promise.all(

@@ -18,9 +18,11 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 // stripe listen --forward-to localhost:3000/api/webhook
 const endpointSecret = "whsec_r5LYYhRNTt1PoFuJvC5GZni9JjR4n4OA";
 
+// TEST with command --> `stripe trigger payment_intent.created`
+
 const fulfillOrder = async (session) => {
-  // TODO: fill me in
-  console.log("Fulfilling order", session);
+  // DEBUG USE: uncomment to see session contents
+  // console.log("Fulfilling order", session);
 
   return app
     .firestore()
