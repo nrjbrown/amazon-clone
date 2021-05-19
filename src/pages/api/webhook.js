@@ -16,7 +16,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 // Find your endpoint's secret in your Dashboard's webhook settings
 // --- OR ---
 // stripe listen --forward-to localhost:3000/api/webhook
-const endpointSecret = "whsec_r5LYYhRNTt1PoFuJvC5GZni9JjR4n4OA";
+const endpointSecret = process.env.STRIPE_SIGNING_SECRET;
 
 // TEST with command --> `stripe trigger payment_intent.created`
 
