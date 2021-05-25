@@ -1,5 +1,4 @@
 import {
-  BeakerIcon,
   MenuIcon,
   SearchIcon,
   ShoppingCartIcon,
