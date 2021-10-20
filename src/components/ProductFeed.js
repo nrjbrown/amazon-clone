@@ -1,4 +1,4 @@
-import Product from "./product";
+import Product from "./Product.js";
 
 function ProductFeed({products}) {
     return (
