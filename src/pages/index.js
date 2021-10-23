@@ -14,9 +14,11 @@ export default function Home({ products }) {
         {/* Banner */}
         <Banner />
 
-        {/* Product Feed */}
+        {/* Product Feed */} 
 
-        <ProductFeed products={products } />
+        <ProductFeed products={products} />
+
+        
         
       </main>
     </div>
